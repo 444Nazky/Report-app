@@ -16,3 +16,11 @@
 *.yaml linguist-language=Dart
 *.yml linguist-language=Dart
 
+# Exclude web template from language stats
+web/** linguist-vendored
+web/** linguist-documentation=false
+
+# Exclude build reports from language stats
+android/build/** linguist-vendored
+build/** linguist-vendored
+
